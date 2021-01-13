@@ -38,9 +38,9 @@ before_build:
 build_script:
   # Build containerd-shim-runhcs-v1.exe and runhcs.exe from Microsoft/hcsshim
   - bash.exe -elc "export PATH=/c/tools/mingw64/bin:$PATH;
-        export GOBIN=/c/gopath/src/github.com/Microsoft/hcsshim/bin;
+        export GOBIN=/c/gopath/src/github.com/kikiChuang/hcsshim/bin;
         mkdir $GOBIN;
-        pushd /c/gopath/src/github.com/Microsoft/hcsshim/cmd/containerd-shim-runhcs-v1;
+        pushd /c/gopath/src/github.com/kikiChuang/hcsshim/cmd/containerd-shim-runhcs-v1;
         go install;
         cd ../runhcs;
         go install;

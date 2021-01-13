@@ -1,4 +1,4 @@
-module github.com/Microsoft/hcsshim/test
+module github.com/kikiChuang/hcsshim/test
 
 go 1.13
 

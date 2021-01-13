@@ -6,7 +6,7 @@ import weak "gogoproto/gogo.proto";
 import "google/protobuf/timestamp.proto";
 import "github.com/containerd/cgroups/stats/v1/metrics.proto";
 
-option go_package = "github.com/Microsoft/hcsshim/cmd/containerd-shim-runhcs-v1/stats;stats";
+option go_package = "github.com/kikiChuang/hcsshim/cmd/containerd-shim-runhcs-v1/stats;stats";
 
 message Statistics {
 	oneof container {

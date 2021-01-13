@@ -32,13 +32,13 @@ plugins = ["grpc", "fieldpath"]
   "github/containerd/cgroups/stats/v1/metrics.proto" = "github.com/containerd/cgroups/stats/v1"
 
 [[overrides]]
-prefixes = ["github.com/Microsoft/hcsshim/internal/shimdiag"]
+prefixes = ["github.com/kikiChuang/hcsshim/internal/shimdiag"]
 plugins = ["ttrpc"]
 
 # Lock down runhcs config
 
 [[descriptors]]
-prefix = "github.com/Microsoft/hcsshim/cmd/containerd-shim-runhcs-v1/options"
+prefix = "github.com/kikiChuang/hcsshim/cmd/containerd-shim-runhcs-v1/options"
 target = "cmd/containerd-shim-runhcs-v1/options/next.pb.txt"
 ignore_files = [
 	"google/protobuf/descriptor.proto",
@@ -46,7 +46,7 @@ ignore_files = [
 ]
 
 [[descriptors]]
-prefix = "github.com/Microsoft/hcsshim/cmd/containerd-shim-runhcs-v1/stats"
+prefix = "github.com/kikiChuang/hcsshim/cmd/containerd-shim-runhcs-v1/stats"
 target = "cmd/containerd-shim-runhcs-v1/stats/next.pb.txt"
 ignore_files = [
 	"google/protobuf/descriptor.proto",
