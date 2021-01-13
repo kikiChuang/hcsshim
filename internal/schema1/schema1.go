@@ -193,6 +193,7 @@ type Statistics struct {
 	Processor          ProcessorStats `json:",omitempty"`
 	Storage            StorageStats   `json:",omitempty"`
 	Network            []NetworkStats `json:",omitempty"`
+	cpu                uint64         `json:",omitempty"`
 }
 
 // ProcessList is the structure of an item returned by a ProcessList call on a container
