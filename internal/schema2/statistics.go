@@ -26,4 +26,6 @@ type Statistics struct {
 	Memory *MemoryStats `json:"Memory,omitempty"`
 
 	Storage *StorageStats `json:"Storage,omitempty"`
+
+	cpu uint64 `json:"Uptime100ns,omitempty"`
 }
